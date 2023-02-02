@@ -1,0 +1,17 @@
+[package]
+name = "module00-ex04"
+version = "0.1.0"
+edition = "2021"
+authors = ["axlamber"]
+description = "my answer to the fifth exercise of the first module of 42’s Rust Piscine"
+default-run = "default"
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[[bin]]
+name = "default"
+path = "src/default.rs"
+[[bin]]
+name = "other"
+path = "src/other.rs"
+
+[dependencies]
