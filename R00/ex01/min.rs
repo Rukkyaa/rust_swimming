@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   min.rs                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
+/*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 15:20:11 by axlamber          #+#    #+#             */
-/*   Updated: 2023/02/01 15:23:46 by axlamber         ###   ########.fr       */
+/*   Updated: 2023/02/04 18:39:20 by rukkyaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 fn	min(a: i32, b: i32) -> i32
 {
-	return [a, b][(a > b) as usize];
+	[a, b][(a > b) as usize];
 }
 
 fn	main()
