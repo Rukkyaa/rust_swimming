@@ -6,10 +6,11 @@
 /*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 15:28:22 by rukkyaa           #+#    #+#             */
-/*   Updated: 2023/02/04 17:55:34 by rukkyaa          ###   ########.fr       */
+/*   Updated: 2023/02/04 18:36:09 by rukkyaa          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#![allow(dead_code)]
 fn	is_valid_number(number: u32, needle: &[u32]) -> bool {
 	for elem in needle {
 		if number == *elem {return true;}
@@ -38,7 +39,7 @@ fn	get_slice_len(haystack: &[u32], needle: &[u32]) -> usize {
 	i
 }
 
-fn	largest_group<'a>(haystack: &'a [u32], needle: &'a [u32]) -> &'a [u32] {
+fn	largest_group<'a>(haystack: &'a [u32], needle: &[u32]) -> &'a [u32] {
 	let mut	slice : &[u32] = &[];
 
 	for i in 0..haystack.len() {
@@ -70,15 +71,15 @@ mod	test {
 		assert_eq!(largest_group(&[1, 3, 2, 2, 1, 3, 4], &[5]), &[]);
 	}
 
-	// fn test_lifetimes() {
-	// 	let haystack = [1, 2, 3, 2, 1];
-	// 	let result;
+	fn test_lifetimes() {
+		let haystack = [1, 2, 3, 2, 1];
+		let result;
 	
-	// 	{
-	// 		let needle = [2, 3];
-	// 		result = largest_group(&haystack, &needle);
-	// 	}
+		{
+			let needle = [2, 3];
+			result = largest_group(&haystack, &needle);
+		}
 
-	// 	assert_eq!(result, &[2, 3, 2]);
-	// }
+		assert_eq!(result, &[2, 3, 2]);
+	}
 }
