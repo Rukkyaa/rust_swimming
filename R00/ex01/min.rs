@@ -3,19 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   min.rs                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 15:20:11 by axlamber          #+#    #+#             */
-/*   Updated: 2023/02/04 18:39:20 by rukkyaa          ###   ########.fr       */
+/*   Updated: 2023/02/06 08:44:14 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 fn	min(a: i32, b: i32) -> i32
 {
-	[a, b][(a > b) as usize];
+	[a, b][(a > b) as usize]
 }
 
-fn	main()
-{
-	println!("{}", min(1, -5));
-}
+// fn	main()
+// {
+// 	println!("{}", min(1, -5));
+// }

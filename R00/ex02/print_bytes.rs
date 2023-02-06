@@ -6,7 +6,7 @@
 /*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/01 15:37:10 by axlamber          #+#    #+#             */
-/*   Updated: 2023/02/01 15:38:18 by axlamber         ###   ########.fr       */
+/*   Updated: 2023/02/06 08:44:32 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ fn	print_bytes(s: &str)
 	}
 }
 
-fn	main()
-{
-	print_bytes("Déjà Vu\n");
-}
+// fn	main()
+// {
+// 	print_bytes("Déjà Vu\n");
+// }
