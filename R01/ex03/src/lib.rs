@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   lib.rs                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 15:28:22 by rukkyaa           #+#    #+#             */
-/*   Updated: 2023/02/04 18:36:09 by rukkyaa          ###   ########.fr       */
+/*   Updated: 2023/02/06 18:29:15 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #![allow(dead_code)]
+
 fn	is_valid_number(number: u32, needle: &[u32]) -> bool {
 	for elem in needle {
 		if number == *elem {return true;}

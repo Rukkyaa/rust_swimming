@@ -3,12 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   lib.rs                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 15:16:25 by rukkyaa           #+#    #+#             */
-/*   Updated: 2023/02/04 15:21:27 by rukkyaa          ###   ########.fr       */
+/*   Updated: 2023/02/06 18:29:30 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#![allow(dead_code)]
 
 fn	min<'a>(a: &'a i32, b: &'a i32) -> &'a i32 {
 	[a, b][(a > b) as usize]

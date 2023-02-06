@@ -3,14 +3,15 @@
 /*                                                        :::      ::::::::   */
 /*   lib.rs                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rukkyaa <rukkyaa@student.42.fr>            +#+  +:+       +#+        */
+/*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/04 14:18:58 by rukkyaa           #+#    #+#             */
-/*   Updated: 2023/02/04 14:56:30 by rukkyaa          ###   ########.fr       */
+/*   Updated: 2023/02/06 18:29:21 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #![allow(dead_code)]
+
 const fn	color_name(color: &[u8; 3]) -> &'static str
 {
 	match color {
