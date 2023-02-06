@@ -6,7 +6,7 @@
 /*   By: axlamber <axlamber@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/02/03 16:18:10 by axlamber          #+#    #+#             */
-/*   Updated: 2023/02/03 16:50:56 by axlamber         ###   ########.fr       */
+/*   Updated: 2023/02/06 11:13:43 by axlamber         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,4 +55,9 @@ pub fn strpcmp(query: &[u8], pattern: &[u8]) -> bool {
 	}
 	while p != p_len && pattern[p] == b'*' { p += 1; }
 	p == p_len && q == q_len
+}
+
+#[test]
+fn ultimate() {
+    assert!(strpcmp(b"abbcdefcdeeeffef", b"ab*cd*ef"));
 }
